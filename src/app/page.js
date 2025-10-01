@@ -8,12 +8,16 @@ import AnnualEconomic from "@/components/Annualeconomic";
 import EconomicImpact from "@/components/EconomicImpact ";
 import StressRoot from "@/components/StressRoot";
 import Contact from "@/components/Contact";
+import HeroBanner from "@/components/HeroBanner";
+import AnchorsSection from "@/components/AnchorsSection"; 
 
 export default function Home() {
   return (
     <>
       <Header/>
       <Slider/>
+      <HeroBanner/>
+      <AnchorsSection/>
       <HowitWork/>
       <AppFeatures/>
       <AnnualEconomic/>

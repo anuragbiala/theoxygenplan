@@ -1,5 +1,6 @@
 import Image from "next/image";
-import partnershipImg from "@/app/images/mission.jpg"; // you can replace with a relevant image
+import partnershipImg from "@/app/images/mission.jpg";
+
 export default function Partnerships() {
   return (
     <section
@@ -9,35 +10,33 @@ export default function Partnerships() {
       <div className="max-w-screen-xl mx-auto">
         {/* Heading */}
         <div className="text-center max-w-3xl mx-auto">
-          <h6 className="font-normal uppercase mb-2">
-            <span className="font-semibold text-green-700">Partnerships</span> &
-            Implementation Kit
-          </h6>
+          <h6 className="font-normal uppercase mb-2"></h6>
           <h2 className="text-3xl font-semibold mb-3">
-            Expanding Reach & Operational Excellence
+            <span className="text-black">Health Equity</span>{" "}
+            <span className="text-red-600">&</span>{" "}
+            <span className="text-green-700">Policy Alignment</span>
           </h2>
-          <p className="text-base font-normal text-gray-500">
-            Now onboarding founding partners across Medicaid, health systems,
-            payers, and employers. Limited preferred slots available.
-          </p>
         </div>
 
         <div className="grid lg:grid-cols-3 grid-cols-1 gap-6 mt-10">
-          {/* Left Column: Partnerships */}
+          {/* Left Column */}
           <div className="space-y-6 my-auto">
             {[
-              "Medicaid pilots & 1115 waivers",
-              "Health system EPIC integrations",
-              "Payer quality & screening mandates",
-              "Employer/EAP workforce programs",
+              "Universal Screening, Universal Access",
+              "Medicaid & Underserved Populations",
             ].map((item, idx) => (
               <div
                 key={idx}
-                className="p-6 group rounded-xl drop-shadow-md bg-white"
+                className="p-6 group rounded-xl drop-shadow-md bg-green-50 border border-green-200"
               >
-                <h2 className="text-2xl font-medium text-default-950 mt-2">
+                <h2 className="text-xl font-medium text-green-800 mt-2">
                   {item}
                 </h2>
+                <p className="mt-2 text-gray-700 text-base">
+                  {item === "Universal Screening, Universal Access"
+                    ? "Stress Number™ ensures every patient — regardless of background — gets measured on the same validated scale. No guesswork. No bias."
+                    : "Aligned with CMS Aim 1 (2026), Stress Number™ was designed for Medicaid pilots, 1115 waivers, and community health equity initiatives."}
+                </p>
               </div>
             ))}
           </div>
@@ -52,21 +51,24 @@ export default function Partnerships() {
             />
           </div>
 
-          {/* Right Column: Implementation Kit */}
+          {/* Right Column */}
           <div className="space-y-6 my-auto">
             {[
-              "EPIC build spec & flowsheet",
-              "BPA at ≤23 & routing",
-              "96127 billing tip sheet",
-              "Training slidelet (2–3 min)",
+              "First Validated Cutoff for Stress (≤23)",
+              "CPT 96127 Billable & EPIC-Ready",
             ].map((item, idx) => (
               <div
                 key={idx}
-                className="p-6 group rounded-xl drop-shadow-md bg-white"
+                className="p-6 group rounded-xl drop-shadow-md bg-green-50 border border-green-200"
               >
-                <h2 className="text-2xl font-medium text-default-950 mt-2">
+                <h2 className="text-xl font-medium text-green-800 mt-2">
                   {item}
                 </h2>
+                <p className="mt-2 text-gray-700 text-base">
+                  {item === "First Validated Cutoff for Stress (≤23)"
+                    ? "This breakthrough cutoff makes stress measurable, billable, and actionable — giving underserved populations the same standard of care as anyone else."
+                    : "Because equity isn’t real until it’s practical. Stress Number™ works in the systems clinicians already use and unlocks reimbursement."}
+                </p>
               </div>
             ))}
           </div>

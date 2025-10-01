@@ -2,12 +2,9 @@
 
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
-import s1 from "@/app/images/s1.png";
-import s2 from "@/app/images/s2.png";
-import s3 from "@/app/images/s3.png";
-import s4 from "@/app/images/s4.png";
+import s1 from "@/app/images/slide.jpg";
 
-const images = [s1, s2, s3, s4];
+const images = [s1];
 
 export default function Slider() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -25,7 +22,7 @@ export default function Slider() {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 3000); // Auto-slide every 3 seconds
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 
@@ -47,7 +44,7 @@ export default function Slider() {
         </div>
       ))}
       {/* Controls */}
-      <button
+      {/* <button
         onClick={prevSlide}
         className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/30 p-2 rounded-full"
       >
@@ -58,7 +55,7 @@ export default function Slider() {
         className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/30 p-2 rounded-full"
       >
         ▶
-      </button>
+      </button> */}
       {/* Indicators */}
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {images.map((_, index) => (

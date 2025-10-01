@@ -21,7 +21,8 @@ export default function UnifiedScreener() {
           </p>
           <div className="flex gap-4 justify-center mt-6">
             <a
-              href="#"
+              href="/files/Stress_Number_Psychometric_Packet.pdf"
+              download
               className="px-6 py-3 rounded-lg bg-green-600 text-white hover:bg-green-700 transition-all"
             >
               Download Validation Packet

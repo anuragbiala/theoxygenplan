@@ -223,6 +223,13 @@ export default function Header() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/faq" passHref legacyBehavior>
+                    <a className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">
+                      FAQ
+                    </a>
+                  </Link>
+                </li>
+                <li>
                   <Link href="/contact" passHref legacyBehavior>
                     <a className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0">
                       Contact
