@@ -236,12 +236,23 @@ export default function Faq() {
     {
       question: "24) How can organizations adopt it?",
       answer: (
-        <p className="mb-2 text-gray-500 text-left">
-          Step 1: Fit & Pilot → define sites/workflows. Step 2: Integrate →
-          EHR/flags/referrals. Step 3: Scale → coding, reporting, expansion.
-        </p>
+        <div className="text-gray-500 text-left space-y-1">
+          <p>Step 1: Fit & Pilot → define sites/workflows.</p>
+          <p>Step 2: Integrate → EHR/flags/referrals.</p>
+          <p>Step 3: Scale → coding, reporting, expansion.</p>
+        </div>
       ),
     },
+
+    // {
+    //   question: "24) How can organizations adopt it?",
+    //   answer: (
+    //     <p className="mb-2 text-gray-500 text-left">
+    //       Step 1: Fit & Pilot → define sites/workflows. Step 2: Integrate
+    //       →EHR/flags/referrals. Step 3: Scale → coding, reporting, expansion.
+    //     </p>
+    //   ),
+    // },
     {
       question: "25) What NAICS codes apply?",
       answer: (

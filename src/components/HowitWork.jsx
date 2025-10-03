@@ -15,18 +15,25 @@ export default function UnifiedScreener() {
           <h2 className="text-3xl font-semibold mb-3">
             The First Unified Behavioral Screener in 20 Years
           </h2>
-          <p className="text-base font-normal text-gray-500 max-w-2xl mx-auto">
+          <p className="text-base font-normal text-gray-500 whitespace-nowrap">
             One validated score across stress, anxiety, and depression —
             replacing multiple tools with a single, EPIC-ready solution.
           </p>
+          {/* <p className="text-base font-normal text-gray-500 max-w-2xl mx-auto">
+            One validated score across stress, anxiety, and depression —
+            replacing multiple tools with a single, EPIC-ready solution.
+          </p> */}
           <div className="flex gap-4 justify-center mt-6">
-            <a
+            <button className="px-6 py-3 rounded-lg bg-green-600 text-white hover:bg-green-700 transition-all">
+              Download Validation Packet
+            </button>
+            {/* <a
               href="/files/Stress_Number_Psychometric_Packet.pdf"
               download
               className="px-6 py-3 rounded-lg bg-green-600 text-white hover:bg-green-700 transition-all"
             >
               Download Validation Packet
-            </a>
+            </a> */}
             <a
               href="/partners"
               className="px-6 py-3 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-all"
